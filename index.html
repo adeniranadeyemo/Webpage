@@ -41,33 +41,51 @@
 
 <!-- More info -->
             <section class="more-info">
-                <div class="feature">
-                    <div class="content cc">
-                        <b><p class="title">Lightweight</p></b>
-                        <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui minus sit nihil ipsa error obcaecati.</p>
-                    </div>
 
-                    <img src="img/Nike2.jpg" class="a" alt="Another shoe">
+              <center>
+                <div class="feature">
+                  <div class="content cc">
+                    <b><p class="title">Lightweight</p></b>
+                    <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui minus sit nihil ipsa error obcaecati.</p>
+                  </div>
+
+                  <img src="img/Nike2.jpg" class="a" alt="Another shoe">
                 </div>
 
                 <div class="feature flip_left">
-                    <div class="content">
-                        <b><p class="title">Lightweight</p></b>
-                        <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui minus sit nihil ipsa error obcaecati.</p>
-                    </div>
+                  <div class="content">
+                    <b><p class="title">Lightweight</p></b>
+                    <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui minus sit nihil ipsa error obcaecati.</p>
+                  </div>
 
-                    <img src="img/Nike3.jpg" class="a" alt="Another shoe">
+                  <img src="img/Nike3.jpg" class="a" alt="Another shoe">
                 </div>
 
                 <div class="feature">
-                    <div class="content">
-                      <b><p class="title">Lightweight</p></b>
-                      <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui minus sit nihil ipsa error obcaecati.</p>
-                    </div>
+                  <div class="content">
+                    <b><p class="title">Lightweight</p></b>
+                    <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui minus sit nihil ipsa error obcaecati.</p>
+                  </div>
 
-                    <img src="img/Nike4.jpg" class="a" alt="Another shoe">
+                  <img src="img/Nike4.jpg" class="a" alt="Another shoe">
                 </div>
+              </center>
+
             </section>
             </div>
+
+            <script type="text/javascript">
+              const sideicon = document.querySelector('.sideicon')
+              const close = document.querySelector('.close')
+              const nav = document.querySelector('nav')
+
+              sideicon.addEventListener('click', () => {
+                nav.classList.add('open-nav')
+              })
+
+              close.addEventListener('click', () => {
+                nav.classList.remove('open-nav')
+              })
+            </script>
         </body>
         </html>

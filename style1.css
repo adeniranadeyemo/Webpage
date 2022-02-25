@@ -92,6 +92,8 @@ nav ul a:hover{
 .hero{
   color: darkcyan;
   text-align: center;
+  animation: moveDown 1s ease-in-out forwards;
+  opacity: 0;
 }
 
 .dash{
@@ -119,6 +121,10 @@ nav ul a:hover{
 
 .desc{
   line-height: 1.48rem;
+}
+
+.open-nav{
+  transform: translateX(0%);
 }
 
 @media only screen and (min-width: 680px){
@@ -286,6 +292,8 @@ header .dashicon{
   .feature{
     gap: 0;
   }
+}
+
 
 @keyframes introload{
   from{
@@ -294,7 +302,6 @@ header .dashicon{
   to {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
-
 }
 
 @keyframes moveArrow{
@@ -306,7 +313,12 @@ header .dashicon{
   }
 }
 
-  .dash{
-    transform: rotate(270deg);
+@keyframes moveDown{
+    from{
+      transform: translateY(-100px);
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
   }
-}
