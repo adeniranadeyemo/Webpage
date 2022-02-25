@@ -31,6 +31,7 @@ a{
   /* background-size: cover; */
   background-position-x: 10%;
   background-position-y: -120%;
+  animation: introload 2s forwards;
   /* overflow: hidden; */
 }
 
@@ -96,6 +97,7 @@ nav ul a:hover{
 .dash{
   transform: rotate(270deg);
   margin-top: 20px;
+  animation: moveArrow 1s alternate-reverse infinite;
 }
 
 .more-info{
@@ -258,16 +260,15 @@ header .dashicon{
   }
 
   nav{
-    margin-right: 200px;
+    margin-right: 150px;
     background: none;
   }
 
   .wrapper{
     width: 1200px;
-    /* margin: 0 auto; */
   }
 
-    .hero-img{
+  .hero-img{
       left: unset;
       right: 0;
       width: 50%;
@@ -278,7 +279,34 @@ header .dashicon{
       background-position-y: -120%;
     }
 
-  /* .hero-img{
-    float: right;
-  } */
+  .more-info{
+      margin: 0 auto;
+    }
+
+  .feature{
+    gap: 0;
+  }
+
+@keyframes introload{
+  from{
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  to {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+}
+
+@keyframes moveArrow{
+  from{
+    transform: translate(-30px);
+  }
+  to {
+    transform: translate(0);
+  }
+}
+
+  .dash{
+    transform: rotate(270deg);
+  }
 }
